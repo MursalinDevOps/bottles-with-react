@@ -4,7 +4,7 @@ import Bottles from './Components/Bottles/Bottles'
 function App() {
   return (
     <>
-    <h1>Adidas Bottles with React</h1>
+    <h2>Adidas Bottles with React</h2>
      <Bottles></Bottles>
     </>
   )

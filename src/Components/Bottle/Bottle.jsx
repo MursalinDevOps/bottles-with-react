@@ -1,5 +1,6 @@
 import './bottle.css'
-export default function Bottle({ bottle }) {
+export default function Bottle({ bottle, handleCart }) {
+    // console.log(handleCart)
     const { img, name, seller, price, ratings, ratingsCount, stock } = bottle
     return (
         <div className='card'>
@@ -10,6 +11,9 @@ export default function Bottle({ bottle }) {
                 <h4>Price:  ${price}</h4>
                 <p>Ratings: {ratings} <small>({ratingsCount})</small></p>
                 <p>Stock: {stock}</p>
+                <button 
+                onClick={handleCart}
+                >Add to cart</button>
             </div>
         </div>
     )
